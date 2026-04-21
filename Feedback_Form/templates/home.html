@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="/home" method="POST">
+    
+    <label for="username">USERNAME</label>
+    <input type="text" id="username" name="username" placeholder="Enter the Username" required>
+
+    <label for="message">MESSAGE</label>
+    <textarea id="message" name="message" placeholder="Type your feedback" required></textarea>
+
+    <input type="submit" value="SUBMIT">
+
+</form>   
+{% endblock %}
